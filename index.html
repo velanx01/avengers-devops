@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Marvel Characters & Movies</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="hero">
+
+        <h1>⚡ MARVEL UNIVERSE ⚡</h1>
+
+        <p>Characters & Movies</p>
+
+        <p>Choose your hero</p>
+
+    </header>
+
+
+    <!-- Characters -->
+    <main>
+
+        <section class="characters">
+
+            <!-- Iron Man -->
+            <div class="character-card" onclick="openCharacter('ironman')">
+
+                <div class="character-image">
+                    <img src="images/characters/ironman.jpg"
+                         alt="Iron Man">
+                </div>
+
+                <h2>🦾 Iron Man</h2>
+
+                <p>Tony Stark</p>
+
+            </div>
+
+
+            <!-- Thor -->
+            <div class="character-card" onclick="openCharacter('thor')">
+
+                <div class="character-image">
+                    <img src="images/characters/thor.jpg"
+                         alt="Thor">
+                </div>
+
+                <h2>⚡ Thor</h2>
+
+                <p>God of Thunder</p>
+
+            </div>
+
+
+            <!-- Hulk -->
+            <div class="character-card" onclick="openCharacter('hulk')">
+
+                <div class="character-image">
+                    <img src="images/characters/hulk.jpg"
+                         alt="Hulk">
+                </div>
+
+                <h2>💪 Hulk</h2>
+
+                <p>Bruce Banner</p>
+
+            </div>
+
+
+            <!-- Doctor Strange -->
+            <div class="character-card" onclick="openCharacter('doctor-strange')">
+
+                <div class="character-image">
+                    <img src="images/characters/doctor-strange.jpg"
+                         alt="Doctor Strange">
+                </div>
+
+                <h2>🪄 Doctor Strange</h2>
+
+                <p>Master of Mystic Arts</p>
+
+            </div>
+
+
+            <!-- Captain America -->
+            <div class="character-card" onclick="openCharacter('captain-america')">
+
+                <div class="character-image">
+                    <img src="images/characters/captain-america.jpg"
+                         alt="Captain America">
+                </div>
+
+                <h2>🛡️ Captain America</h2>
+
+                <p>Steve Rogers</p>
+
+            </div>
+
+
+            <!-- Spider-Man -->
+            <div class="character-card" onclick="openCharacter('spiderman')">
+
+                <div class="character-image">
+                    <img src="images/characters/spiderman.jpg"
+                         alt="Spider-Man">
+                </div>
+
+                <h2>🕷️ Spider-Man</h2>
+
+                <p>Peter Parker</p>
+
+            </div>
+
+
+            <!-- Black Panther -->
+            <div class="character-card" onclick="openCharacter('black-panther')">
+
+                <div class="character-image">
+                    <img src="images/characters/black-panther.jpg"
+                         alt="Black Panther">
+                </div>
+
+                <h2>👑 Black Panther</h2>
+
+                <p>King of Wakanda</p>
+
+            </div>
+
+
+            <!-- Hawkeye -->
+            <div class="character-card" onclick="openCharacter('hawkeye')">
+
+                <div class="character-image">
+                    <img src="images/characters/hawkeye.jpg"
+                         alt="Hawkeye">
+                </div>
+
+                <h2>🏹 Hawkeye</h2>
+
+                <p>Clint Barton</p>
+
+            </div>
+
+
+            <!-- Black Widow -->
+            <div class="character-card" onclick="openCharacter('black-widow')">
+
+                <div class="character-image">
+                    <img src="images/characters/black-widow.jpg"
+                         alt="Black Widow">
+                </div>
+
+                <h2>🥷 Black Widow</h2>
+
+                <p>Natasha Romanoff</p>
+
+            </div>
+
+
+            <!-- Ant-Man -->
+            <div class="character-card" onclick="openCharacter('antman')">
+
+                <div class="character-image">
+                    <img src="images/characters/antman.jpg"
+                         alt="Ant-Man">
+                </div>
+
+                <h2>🐜 Ant-Man</h2>
+
+                <p>Scott Lang</p>
+
+            </div>
+
+        </section>
+
+
+        <!-- Movie Section -->
+
+        <section id="movie-section" class="movie-section">
+
+            <h2 id="selected-character">
+                Select a character
+            </h2>
+
+            <div id="movies" class="movies">
+
+                <!-- Movies will appear here -->
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+
+    <footer class="footer">
+
+        <p>🚀 Marvel Movie Explorer</p>
+
+        <p>Built with HTML • CSS • JavaScript</p>
+
+    </footer>
+
+
+    <!-- JavaScript -->
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

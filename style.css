@@ -1,0 +1,198 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #050505, #160b2b, #250000);
+    color: white;
+    min-height: 100vh;
+}
+
+/* Header */
+
+.hero {
+    text-align: center;
+    padding: 70px 20px 50px;
+}
+
+.hero h1 {
+    font-size: 50px;
+    letter-spacing: 4px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 20px;
+    color: #cccccc;
+    margin-top: 8px;
+}
+
+
+/* Character Grid */
+
+.characters {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 30px;
+
+    padding: 20px 0 60px;
+}
+
+
+/* Character Box */
+
+.character-card {
+    background: rgba(255, 255, 255, 0.08);
+
+    border: 2px solid rgba(255, 255, 255, 0.2);
+
+    border-radius: 20px;
+
+    padding: 20px;
+
+    text-align: center;
+
+    cursor: pointer;
+
+    transition: all 0.4s ease;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+
+/* Hover */
+
+.character-card:hover {
+    transform: translateY(-12px) scale(1.03);
+
+    border-color: white;
+
+    background: rgba(255, 255, 255, 0.15);
+
+    box-shadow: 0 15px 40px rgba(255, 255, 255, 0.15);
+}
+
+
+/* Character Image */
+
+.character-image {
+    width: 100%;
+    height: 280px;
+
+    overflow: hidden;
+
+    border-radius: 15px;
+
+    margin-bottom: 18px;
+}
+
+.character-image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    transition: transform 0.5s ease;
+}
+
+
+/* Image Hover */
+
+.character-card:hover .character-image img {
+    transform: scale(1.1);
+}
+
+
+/* Character Name */
+
+.character-card h2 {
+    font-size: 24px;
+
+    margin-bottom: 8px;
+}
+
+
+/* Character Description */
+
+.character-card p {
+    color: #cccccc;
+
+    font-size: 16px;
+}
+
+
+/* Movie Section */
+
+.movie-section {
+    width: 90%;
+    max-width: 1200px;
+
+    margin: 30px auto 80px;
+
+    text-align: center;
+}
+
+.movie-section h2 {
+    font-size: 35px;
+
+    margin-bottom: 30px;
+}
+
+.movies {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+
+/* Footer */
+
+.footer {
+    text-align: center;
+
+    padding: 30px;
+
+    background: #050505;
+
+    color: #aaaaaa;
+}
+
+
+/* Mobile */
+
+@media (max-width: 900px) {
+
+    .characters {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .movies {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .characters {
+        grid-template-columns: 1fr;
+    }
+
+    .movies {
+        grid-template-columns: 1fr;
+    }
+
+    .hero h1 {
+        font-size: 35px;
+    }
+}
