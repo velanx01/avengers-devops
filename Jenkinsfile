@@ -12,7 +12,7 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building Avengers project...'
-                bsh 'ls -la'
+               sh 'ls -la'
             }
         }
 
