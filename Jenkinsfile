@@ -12,14 +12,14 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building Avengers project...'
-                bat 'dir'
+                bsh 'ls -la'
             }
         }
 
         stage('Test') {
             steps {
                 echo 'Testing Avengers project...'
-                bat 'if exist index.html (echo index.html FOUND) else (echo index.html NOT FOUND)'
+                sh 'if [ -f index.html ]; then echo "index.html FOUND"; else echo "index.html NOT FOUND"; fi'
             }
         }
     }
